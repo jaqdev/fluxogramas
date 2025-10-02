@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Palíndromo</title>
+</head>
+
+<body>
+    <script>
+        let palavra, invertida;
+        palavra = prompt("Digite uma palavra:");
+        invertida = palavra.split("").reverse().join("");
+        if (palavra === invertida) alert("É palíndromo!");
+        else alert("Não é palíndromo.");
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adivinhação</title>
+</head>
+
+<body>
+    <script>
+        let aleatorio, tentativa, chute;
+        aleatorio = Math.floor(Math.random() * 10) + 1;
+        tentativa = 0;
+        while (tentativa < 3) {
+            chute = parseInt(prompt("Adivinhe um número entre 1 e 10:"));
+            if (chute === aleatorio) {
+                alert("Acertou!");
+                break;
+            } else {
+                alert("Errado!");
+            }
+            tentativa++;
+        }
+        if (chute !== aleatorio) alert("O número era: " + aleatorio);
+    </script>
+</body>
+
+</html>

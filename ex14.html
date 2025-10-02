@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <script>
+        let num1, num2, escolha, resultado;
+        num1 = parseFloat(prompt("Digite o primeiro número:"));
+        num2 = parseFloat(prompt("Digite o segundo número:"));
+        escolha = prompt("Escolha operação (+ - * /):");
+        if (escolha === "+") resultado = num1 + num2;
+        else if (escolha === "-") resultado = num1 - num2;
+        else if (escolha === "*") resultado = num1 * num2;
+        else if (escolha === "/") resultado = num1 / num2;
+        else resultado = "Operação inválida";
+        alert("Resultado: " + resultado);
+    </script>
+</body>
+
+</html>

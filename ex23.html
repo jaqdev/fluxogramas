@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ordenar números</title>
+</head>
+
+<body>
+    <script>
+        let n1, n2, n3, resultado;
+        n1 = parseFloat(prompt("Digite o 1º número:"));
+        n2 = parseFloat(prompt("Digite o 2º número:"));
+        n3 = parseFloat(prompt("Digite o 3º número:"));
+        resultado = [n1, n2, n3].sort((a, b) => a - b);
+        alert("Ordem crescente: " + resultado);
+    </script>
+</body>
+
+</html>

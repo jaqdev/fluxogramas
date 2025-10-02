@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Números pares</title>
+</head>
+
+<body>
+    <script>
+        let inicio, fim, i, resultado;
+        inicio = parseInt(prompt("Digite o início do intervalo:"));
+        fim = parseInt(prompt("Digite o fim do intervalo:"));
+        resultado = "";
+        for (i = inicio; i <= fim; i++) {
+            if (i % 2 === 0) {
+                resultado += i + " ";
+            }
+        }
+        alert("Números pares: " + resultado);
+    </script>
+</body>
+
+</html>

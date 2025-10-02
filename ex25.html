@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contar vogais</title>
+</head>
+
+<body>
+    <script>
+        let texto, i, letra, contador;
+        texto = prompt("Digite uma frase:");
+        contador = 0;
+        for (i = 0; i < texto.length; i++) {
+            letra = texto[i].toLowerCase();
+            if ("aeiou".includes(letra)) contador++;
+        }
+        alert("Quantidade de vogais: " + contador);
+    </script>
+</body>
+
+</html>
